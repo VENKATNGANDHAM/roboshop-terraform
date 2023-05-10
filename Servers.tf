@@ -1,4 +1,4 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "frontend" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
     Name = "frontend"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "catalogue" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -14,7 +14,7 @@ resource "aws_instance" "web" {
     Name = "catalogue"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "mongodb" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -22,7 +22,7 @@ resource "aws_instance" "web" {
     Name = "mongodb"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "mysql" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -30,7 +30,7 @@ resource "aws_instance" "web" {
     Name = "mysql"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "user" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -38,7 +38,7 @@ resource "aws_instance" "web" {
     Name = "user"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "cart" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -46,7 +46,7 @@ resource "aws_instance" "web" {
     Name = "cart"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "shipping" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -54,7 +54,7 @@ resource "aws_instance" "web" {
     Name = "shipping"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "payment" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -62,7 +62,7 @@ resource "aws_instance" "web" {
     Name = "payment"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "rabbitmq" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -70,7 +70,7 @@ resource "aws_instance" "web" {
     Name = "rabbitmq"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "redis" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
@@ -78,7 +78,7 @@ resource "aws_instance" "web" {
     Name = "redis"
   }
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "dispatch" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
   instance_type = "t3.micro"
 
